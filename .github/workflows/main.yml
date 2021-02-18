@@ -20,7 +20,7 @@ jobs:
         with:
           name: skim6.18.04
           path: skim
-      
+
   skim:
     needs: build_skim
     runs-on: ubuntu-latest
@@ -75,12 +75,12 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v2
-        
+
       - name: download from skim
         uses: actions/download-artifact@v2
         with:
           name: skim_ggH
-      
+
       - name: download from plot
         uses: actions/download-artifact@v2
         with:
